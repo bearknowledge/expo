@@ -11,6 +11,33 @@
   align-items: center;
 }
 
+@media (max-width: 375px){
+  .desktop{
+  transform: scale(0.45)
+  }
+}
+
+@media (max-width: 600px){
+  .desktop{
+  transform: scale(0.5)
+  }
+}
+
+@media (max-width: 800px){
+  .desktop{
+  transform: scale(0.7)
+  }
+}
+
+  @media (max-width: 1080px){
+    .desktop{
+    transform: scale(0.8)
+  }
+}
+
+
+
+
 .footer {
   display: flex;
   flex: 1;
