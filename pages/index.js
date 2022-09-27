@@ -4,31 +4,8 @@ import styles from '../styles/Home.module.css'
 import Spline from "@splinetool/react-spline";
 import React, { useRef } from 'react'
 import emailjs from 'emailjs-com'
-import { ToastContainer, toast } from 'react-nextjs-toast'
-import { AttentionSeeker, Slide } from "react-awesome-reveal";
 
 export default function Home() {
-
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_in7y71z', 'template_aub9uud', form.current, 'vebAbVX4crJiF2xy9')
-      .then((result) => {
-        console.log(result.text);
-        console.log('message sent!');
-        toast.notify(`Message Sent!`, {type: "success"})
-        form.current.reset();
-        
-      }, (error) => {
-          console.log(error.text);
-          console.log('failed to send');
-          toast.notify(`Message Sent!`, {type: "error"})
-          form.current.reset();
-      });
-  };
-
 
 
   return (
